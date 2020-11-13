@@ -1,5 +1,6 @@
 #include <iostream> 
 #include <iomanip>
+#include <string>
 using namespace std; 
  
 /**********************************************************  
@@ -24,7 +25,7 @@ int main()
     totalPay = employeeHours * PAYRATE;
 
     //output  
-    cout << std::fixed << std::setprecision(2);
+    cout << fixed << setprecision(2);
     cout << left << setw(20) << "Name: " 
         << left << setw(10) << "Department: " 
         << right << setw(10) << "Pay: $" 

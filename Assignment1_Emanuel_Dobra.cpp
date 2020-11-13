@@ -19,11 +19,13 @@ int main()
     cout << fixed << setprecision(2);
 
     // User Input
+    /* If you use a cin >> before a getline(cin, var), 
+        you want to add cin.ignore(80, '/n') before the getline()*/
     cout << "Enter the book's title: ";
     getline(cin, bookTitle);
     cout << "Enter the number of copies: " ;
     cin >> bookQuantity;
-    cin.ignore(256, '\n');
+    cin.ignore(80, '\n');
     cout << "Enter the price of the book: ";
     cin >> unitPrice;
 
