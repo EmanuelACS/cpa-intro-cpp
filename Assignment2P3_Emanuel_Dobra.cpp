@@ -5,9 +5,10 @@
 using namespace std;
 
 /*****************************************************************
-Name: Emanuel Dobra                          Assignment #2 Phase 1
+Name: Emanuel Dobra                          Assignment #2 Phase 3
 Program: Handles multiple guest charges at a hotel. Phase 1 will
- work for one guest only.
+ work for one guest only. Phase 2 will distinguish between room
+ types and output price and details accordingly. Phase 3 
 *****************************************************************/
 int main()
 {
