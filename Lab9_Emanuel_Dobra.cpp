@@ -3,19 +3,16 @@
 #include <ctime>
 using namespace std;
 /**************************************************************
-*
-*
 * Name: Emanuel Dobra
 * Lab Exercise#9: for loops
 Format: for (initialize;condition;increment)
-*
 **************************************************************/
 int main()
 {
 	int number, ctr, countdown;
 	system("color 5F"); //change the console colour to something you like
 	srand((unsigned)time(0)); //start the random number generator
-    //#1 rewrite the following while loop using a for loop. It currently prints 1 2 3 Go!
+    //#1 rewrite the following while loop using a for loop. 
 	ctr = 1; //initialze
 	while (ctr < 4) //loop condtion
 	{
@@ -27,7 +24,8 @@ int main()
     for (ctr=1;ctr<4;ctr++)
         cout << ctr << " ";
     cout << "Go!" << ctr << endl;
-	// #2 print your name 10 times.Each name should appear on a line by itself
+	// #2 print your name 10 times.
+	// Each name should appear on a line by itself
     for (ctr=1;ctr<=10;ctr++)
         cout << "Emanuel Dobra" << endl;
 	//#3 print the ascii values.
@@ -37,7 +35,7 @@ int main()
 	cout << endl << endl;
 	//#4 print todays temperature using degrees symbol
     cout << "Temp: 3" << char(248) << endl;
-	//#5 Use a for loop to print a 5 asterisks (do not use *) values across the screen
+	//#5 Use a for loop to print a 5 asterisks values across the screen
     for(ctr=1;ctr<=5;ctr++)
         cout << char(42);
     cout << endl << endl;
@@ -51,13 +49,15 @@ int main()
 	
 	cout << "Blast off!" << endl<< endl;
 
-	//#7 Complete the following loop instructions that will print the odd numbers from 1 to 20
+	//#7 Complete the following loop instructions that
+	// will print the odd numbers from 1 to 20
 	cout << "Odd numbers are: " << endl;
 	for (ctr=1; ctr<20; ctr+=2)
 	    cout << ctr << " " ;
 	cout << endl<< endl;
 
-	//#8 Complete the rest of the code that helps someone practice their multiplication table.
+	//#8 Complete the rest of the code that helps
+	// someone practice their multiplication table.
 	int number2, answer, correctAnswer, score = 0;
 	char type;
 	cout << "Arithmetic Drill Time";
