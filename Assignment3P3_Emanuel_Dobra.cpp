@@ -16,8 +16,9 @@ int main() {
     const int SIZE = 6;
     int ctr;
     string salesName[SIZE];
-    int salesAmount[SIZE];
-    int salesTotal = 0, salesAvrg = 0, topSellerIndex = 0, topSellerSales = 0, sellersEntered = 0;
+    double salesAmount[SIZE];
+    double salesTotal = 0, salesAvrg = 0, topSellerSales = 0;
+    int topSellerIndex = 0, sellersEntered = 0;
 
     ofstream fout("sales.data");
 
@@ -51,7 +52,7 @@ int main() {
     if (ctr > 0)
         salesAvrg = salesTotal / (ctr);
  
-
+    fout << fixed << setprecision(2);
     fout << right << setw(35) << "Sales Analysis Report" << endl;
     fout << left << setw(15) << "Sales person";
     fout << right << setw(35) << "Sales Amount" << endl;
